@@ -1,0 +1,100 @@
+\documentclass[a4paper,pagesize,8pt,pointlessnumbers,normalheadings]{book}
+
+% this contains a bunch of niceties learned from other projects.
+% they may not all be relevant
+\input{header.tex}
+
+%% bibliography
+%%\addbibresource{main.bib}
+
+\title{
+	\Large An Introduction to Ancient Egyptian\\
+	\Huge \textbf{OFFERING FORMULAE}}
+\author{Sem Essessi\\\\Foreward by <someone>} 
+\date{\today}
+
+\makeindex[columns=2, title=Index, options= -s main.ist, intoc]
+
+\begin{document}
+
+\maketitle
+
+\clearpage
+\vspace*{\fill}
+\clearpage
+
+%beautiful title page goes here
+%\vspace*{\fill}
+%\begin{center}
+%\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{source-images/mockup-modified}
+%\end{center}
+%\ndnname{Osiris}
+%\ndsname{Ptahhotep}
+%\ndsname{Djedkare Isesi}
+%\vspace*{\fill}
+%\pagebreak
+
+\clearpage
+\vspace*{\fill}
+\clearpage
+
+%\chapter*{Dedication}
+\vspace*{\fill}
+\begin{center}
+For my father \nname{Ptah}, who is South of His wall...\\
+\vspace{7.5mm}
+... and for \nname{Mut}, the mother of all of my mothers.\\
+\vspace{15mm}
+May \nname{Seshat} and \nname{Thoth} be satisfied.\\
+\end{center}
+\vspace*{\fill}
+
+\tableofcontents
+
+\markboth{}{}
+
+%to help tables to fill width.
+\newlength\q
+\setlength\q{\dimexpr .25\textwidth -2\tabcolsep}
+
+\chapter*{Foreword}
+\markboth{Foreword}{Foreword}
+\addcontentsline{toc}{chapter}{Foreword}
+\input{foreword.tex}
+\markboth{}{}
+
+\chapter*{Preface}
+\markboth{Preface}{Preface}
+\addcontentsline{toc}{chapter}{Preface}
+\input{preface.tex}
+\markboth{}{}
+
+\chapter*{Notation}
+\markboth{Notation}{Notation}
+\addcontentsline{toc}{chapter}{Notation}
+\input{notation.tex}
+\markboth{}{}
+
+\chapter*{Outline}
+%\vspace*{\fill}
+%\pagebreak
+\addcontentsline{toc}{chapter}{Outline}
+%\section*{Introduction}
+%\markboth{Outline}{Outline}
+%\addcontentsline{toc}{section}{Introduction}
+\input{outline.tex}
+%\markboth{}{}
+
+\pagebreak
+
+\chapter*{Examples}
+%\vspace*{\fill}
+%\pagebreak
+\addcontentsline{toc}{chapter}{Examples}
+\input{examples.tex}
+
+\pagebreak
+
+\printindex
+
+\end{document}
